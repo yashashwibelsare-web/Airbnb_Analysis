@@ -16,41 +16,76 @@ st.set_page_config(
 
 # ---------------- CUSTOM DESIGN ----------------
 
+
 st.markdown("""
 <style>
+
 .stApp {
-    background-color: #F4F7FC;
+    background-color: #080D1B;
+    color: #FFFFFF;
 }
+
+[data-testid="stHeader"] {
+    background-color: #080D1B;
+}
+
 [data-testid="stSidebar"] {
-    background-color: #172554;
+    background-color: #111827;
 }
+
 [data-testid="stSidebar"] * {
-    color: white !important;
+    color: #FFFFFF !important;
 }
+
 h1 {
-    color: #172554;
+    color: #FFFFFF !important;
     font-weight: 800;
 }
+
 h2, h3 {
-    color: #243B64;
+    color: #E2E8F0 !important;
 }
+
+p, label {
+    color: #CBD5E1;
+}
+
 div[data-testid="stMetric"] {
-    background: linear-gradient(135deg,#FFFFFF,#E8F0FF);
-    border: 1px solid #D6E3F5;
+    background: linear-gradient(135deg,#172554,#1E293B);
+    border: 1px solid #334155;
     padding: 20px;
-    border-radius: 14px;
-    box-shadow: 0px 3px 10px rgba(0,0,0,0.06);
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
 }
+
 div[data-testid="stMetricValue"] {
-    color: #2563EB;
+    color: #38BDF8;
     font-weight: bold;
 }
+
 div[data-testid="stMetricLabel"] {
-    color: #475569;
+    color: #CBD5E1;
 }
+
+[data-testid="stFileUploader"] {
+    background-color: #172033;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+div[data-testid="stDataFrame"] {
+    background-color: #111827;
+}
+
 .block-container {
     padding-top: 2rem;
+    padding-bottom: 2rem;
 }
+
+hr {
+    border-color: #334155;
+}
+
 </style>
 """, unsafe_allow_html=True)
 
